@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'screens/pokemon_list_screen.dart';
+import 'modules/dashboard/view/dashboard.dart';
 
 void main() {
-  runApp(const PokedexApp());
+  runApp(const MyApp());
 }
 
-class PokedexApp extends StatelessWidget {
-  const PokedexApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pokédex',
       theme: ThemeData(primarySwatch: Colors.red),
-      home: const PokemonListScreen(),
+      home: const Dashboard(),
     );
   }
 }
